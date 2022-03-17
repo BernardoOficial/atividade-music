@@ -1,0 +1,66 @@
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 50px;
+}
+
+.music-container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0px auto;
+	
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.music-container__title h1 {
+	font-size: 40px;
+	color: #383838;
+	letter-spacing: 1.5px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.music-container__lists-musics {
+	margin-top: 30px;
+	width: 100%;
+}
+
+.music-container__lists-musics ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.music-container__lists-musics li {
+	border-radius: 10px;
+	box-shadow: 2px 2px 4px 1px rgba(0,0,0, 0.1);
+	margin: 40px 40px 0px;
+	padding: 30px;
+	max-width: 400px;
+	width: 100%;
+}
+
+.music-container__lists-musics li p {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 5px;
+}
+
+.music-container__lists-musics li span.label {
+	font-weight: bold;
+}

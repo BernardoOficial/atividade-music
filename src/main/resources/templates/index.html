@@ -1,0 +1,59 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+		
+		<title>Musics</title>
+
+		<link rel="stylesheet" type="text/css" href="main.css">
+		
+	</head>
+	
+	<body>
+	
+		<main class="music-container">
+		
+			<div class="music-container__title">
+		  		<h1>Musics</h1>
+			</div>
+			
+			<div class="music-container__lists-musics">
+				<ul>
+					<li th:each="music : ${musics}">
+						<p>
+							<span class="label">nome</span> <span th:text="${music.getNome()}"></span>
+						</p>
+						<p>
+							<span class="label">álbum</span> <span th:text="${music.getAlbum()}"></span>
+						</p>
+						<p>
+							<span class="label">artistas</span> <span th:text="${music.getArtistas()}"></span>
+						</p>
+						<p>
+							<span class="label">gênero</span> <span th:text="${music.getGenero()}"></span>
+						</p>
+						<p>
+							<span class="label">biografia</span> <span th:text="${music.getBiografia()}"></span>
+						</p>
+						<p>
+							<span class="label">duracao</span> <span th:text="${music.getDuracao()}"></span>
+						</p>
+						<p>
+							<span class="label">data de lançamento</span> <span th:text="${music.getDataLancamento()}"></span>
+						</p>
+					</li>
+					
+				</ul>
+			</div>
+		
+		</main>
+		
+	</body>
+	
+</html>
